@@ -1,425 +1,532 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Fakhri Zhofran Syah | Frontend Developer</title>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fakhri Zhofran Syah | Digital Experience Designer</title>
 
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- LOADING SCREEN -->
+    <div class="loader" id="loader">
+      <div class="loader-text" id="loaderText">F</div>
+    </div>
 
-</head>
-
-<body>
-
-    <!-- Glow Background -->
-    <div class="blur blur1"></div>
-    <div class="blur blur2"></div>
-    <div class="blur blur3"></div>
-
-    <!-- ================= NAVBAR ================= -->
-
-    <header>
-
-        <nav>
-
-            <a href="#" class="logo">
-                Fakhri<span>.</span>
-            </a>
-
-            <ul>
-
-                <li><a href="#home">Home</a></li>
-
-                <li><a href="#about">About</a></li>
-
-                <li><a href="#skills">Skills</a></li>
-
-                <li><a href="#projects">Projects</a></li>
-
-                <li><a href="#contact">Contact</a></li>
-
-            </ul>
-
-            <a href="#" class="nav-btn">
-                Hire Me
-            </a>
-
-        </nav>
-
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+      <nav class="nav-container">
+        <a href="#home" class="logo">Fakhri<span>.</span></a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a
+          href="https://wa.me/6285888204966?text=Halo%20Fakhri%2C%20saya%20ingin%20mendiskusikan%20sebuah%20proyek."
+          target="_blank"
+          class="nav-cta"
+        >
+          <i class="fab fa-whatsapp"></i> Let's Talk
+        </a>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
     </header>
 
-    <!-- ================= HERO ================= -->
-
+    <!-- HERO SECTION -->
     <section class="hero" id="home">
+      <div class="hero-left">
+        <p class="greeting">Hi, I'm Fakhri Zhofran Syah</p>
+        <h1 class="hero-title">
+          Building digital experiences that feel <em>simple.</em>
+        </h1>
 
-        <div class="hero-left">
+        <h2 class="hero-role">
+          <span id="typing"></span><span class="cursor">|</span>
+        </h2>
 
-            <p class="hero-small">
-                👋 Hello, I'm
-            </p>
+        <p class="hero-desc">
+          Saya menggabungkan development, interface design, dan interaction
+          untuk membuat pengalaman digital yang sederhana, modern, dan mudah
+          digunakan.
+        </p>
 
-            <h1>
-
-                Fakhri
-                <span>Zhofran</span>
-                Syah
-
-            </h1>
-
-            <h2>
-
-                <span id="typing"></span>
-
-            </h2>
-
-            <p class="hero-desc">
-
-                Saya memiliki minat yang besar dalam Frontend Development dan UI/UX Design,
-                 serta berkomitmen menciptakan website yang modern, responsif, dan mudah digunakan.
-
-
-            </p>
-
-            <div class="hero-button">
-
-                <a href="img/cv fakhri2.pdf" class="btn">
-                    Download CV
-                </a>
-
-                <a href="#projects" class="btn-outline">
-                    View Projects
-                </a>
-
-            </div>
-
-            <div class="social">
-
-                <a href="https://github.com/fakhrizhofransyah-gif"><i class="fab fa-github"></i></a>
-
-                <a href="https://www.linkedin.com/in/fakhri-zhofran-syah-a22b0433b/"><i class="fab fa-linkedin"></i></a>
-
-                <a href="https://www.instagram.com/zhofran_syah77/"><i class="fab fa-instagram"></i></a>
-
-                <a href="#"><i class="fab fa-dribbble"></i></a>
-
-            </div>
-
+        <div class="hero-buttons">
+          <a href="#work" class="btn btn-primary"
+            >Explore My Work <i class="fas fa-arrow-right"></i
+          ></a>
+          <a href="img/cv fakhri2.pdf" class="btn btn-outline"
+            ><i class="fas fa-download"></i> Download CV</a
+          >
         </div>
 
-        <div class="hero-right">
-
-            <div class="image-box">
-
-                <img src="img/mukapari.jpeg" alt="profile">
-
-            </div>
-
+        <!-- Social Media di Home (di bawah tombol) -->
+        <div class="hero-socials">
+          <a
+            href="https://wa.me/6285888204966"
+            target="_blank"
+            aria-label="WhatsApp"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a
+            href="https://github.com/fakhrizhofransyah-gif"
+            target="_blank"
+            aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/fakhri-zhofran-syah-a22b0433b/"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="mailto:fakhrizhofran.syah@gmail.com" aria-label="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
         </div>
+      </div>
 
+      <div class="hero-right">
+        <div class="profile-card-neu">
+          <div class="profile-img-wrapper">
+            <img src="img/mukapari.jpeg" alt="Fakhri Zhofran Syah" />
+          </div>
+          <div class="profile-info">
+            <h4>Fakhri Zhofran</h4>
+            <p>Digital Experience Designer</p>
+          </div>
+          <div class="float-card fc-top">UI/UX</div>
+          <div class="float-card fc-bottom">Frontend</div>
+        </div>
+      </div>
     </section>
 
-    <!-- ================= ABOUT ================= -->
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section reveal">
+      <div class="section-header">
+        <p class="section-tag">01 - About</p>
+        <h2>Designing with purpose, building with curiosity.</h2>
+      </div>
 
-    <section id="about">
-
-        <div class="section-title">
-
-            <h2>About Me</h2>
-
-            <p>
-                Halo! Saya Fakhri Zhofran Syah, seorang Frontend Developer dan UI/UX Designer yang berfokus pada pembuatan website modern,
-                 responsif, dan ramah pengguna. Saya menggabungkan desain yang menarik dengan kode yang terstruktur untuk menciptakan pengalaman
-                  digital yang optimal. Saat ini, saya terus mengembangkan kemampuan dalam HTML, CSS, JavaScript, PHP, Laravel, Python, MySQL, dan Figma melalui berbagai 
-                  proyek pengembangan website.
-
-            </p>
-
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Halo! Saya Fakhri, seorang developer dan desainer yang percaya bahwa
+            produk digital hebat lahir dari perpaduan logika kode dan empati
+            pengguna. Saya terus mengembangkan kemampuan dalam HTML, CSS,
+            JavaScript, PHP, MySQL, Laravel, dan Figma.
+          </p>
         </div>
-
-        <div class="about-grid">
-
-            <div class="about-text">
-
-                <h3>
-
-                    Frontend Developer &
-                    UI/UX Designer
-
-                </h3>
-
-                <p>
-
-                    Saya memiliki minat yang besar dalam membangun website modern,
-                    responsive, dan memiliki pengalaman pengguna yang baik.
-
-                    Saat ini saya mempelajari HTML, CSS, JavaScript, PHP,
-                    MySQL, Laravel dan UI Design menggunakan Figma.
-
-                </p>
-
-            </div>
-
-            <div class="about-card">
-
-                <div>
-
-                    <h2>2+</h2>
-
-                    <span>Tahun Belajar</span>
-
-                </div>
-
-                <div>
-
-                    <h2>3+</h2>
-
-                    <span>Project</span>
-
-                </div>
-
-                <div>
-
-                    <h2>8+</h2>
-
-                    <span>Technology</span>
-
-                </div>
-
-                <div>
-
-                    <h2>85%</h2>
-
-                    <span>Passion</span>
-
-                </div>
-
-            </div>
-
+        <div class="about-stats">
+          <div class="stat-card">
+            <h3>2+</h3>
+            <p>Years Learning</p>
+          </div>
+          <div class="stat-card">
+            <h3>3+</h3>
+            <p>Projects</p>
+          </div>
+          <div class="stat-card">
+            <h3>8+</h3>
+            <p>Technologies</p>
+          </div>
+          <div class="stat-card">
+            <h3>&infin;</h3>
+            <p>Curiosity</p>
+          </div>
         </div>
-
+      </div>
     </section>
 
-    <!-- ================= SKILLS ================= -->
+    <!-- JOURNEY SECTION -->
+    <section id="journey" class="section reveal">
+      <div class="section-header">
+        <p class="section-tag">02 - Journey</p>
+        <h2>My Journey</h2>
+      </div>
 
-    <section id="skills">
-
-        <div class="section-title">
-
-            <h2>My Skills</h2>
-
+      <div class="timeline">
+        <div class="timeline-item active">
+          <div class="t-dot"></div>
+          <div class="t-content">
+            <h4>2024</h4>
+            <p>Started Learning</p>
+          </div>
         </div>
-
-        <div class="skill-grid">
-
-            <div class="skill-card">
-
-                <i class="fab fa-html5"></i>
-
-                <h3>HTML5</h3>
-
-            </div>
-
-            <div class="skill-card">
-
-                <i class="fab fa-css3-alt"></i>
-
-                <h3>CSS3</h3>
-
-            </div>
-
-            <div class="skill-card">
-
-                <i class="fab fa-js"></i>
-
-                <h3>JavaScript</h3>
-
-            </div>
-
-            <div class="skill-card">
-
-                <i class="fab fa-php"></i>
-
-                <h3>PHP</h3>
-
-            </div>
-
-            <div class="skill-card">
-
-                <i class="fas fa-database"></i>
-
-                <h3>MySQL</h3>
-
-            </div>
-
-            <div class="skill-card">
-
-                <i class="fab fa-laravel"></i>
-
-                <h3>Laravel</h3>
-
-            </div>
-
-            <div class="skill-card">
-
-                <i class="fab fa-python"></i>
-
-                <h3>Python</h3>
-
-            </div>
-
-            <div class="skill-card">
-
-                <i class="fab fa-figma"></i>
-
-                <h3>Figma</h3>
-
-            </div>
-
+        <div class="timeline-item">
+          <div class="t-dot"></div>
+          <div class="t-content">
+            <h4>2025</h4>
+            <p>Built Real Projects</p>
+          </div>
         </div>
-
+        <div class="timeline-item">
+          <div class="t-dot"></div>
+          <div class="t-content">
+            <h4>2026</h4>
+            <p>Exploring UI/UX + Product</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="t-dot"></div>
+          <div class="t-content">
+            <h4>NEXT</h4>
+            <p>Building Better Experiences</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- ================= PROJECT ================= -->
+    <!-- PROCESS SECTION (SIGNATURE) -->
+    <section id="process" class="section reveal">
+      <div class="section-header">
+        <p class="section-tag">03 - Process</p>
+        <h2>From Idea to Experience.</h2>
+      </div>
 
-    <section id="projects">
+      <div class="process-modern-container">
+        <svg
+          class="process-svg"
+          viewBox="0 0 800 300"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color: #1e3a8a; stop-opacity: 1" />
+              <stop offset="50%" style="stop-color: #3b82f6; stop-opacity: 1" />
+              <stop
+                offset="100%"
+                style="stop-color: #60a5fa; stop-opacity: 1"
+              />
+            </linearGradient>
+          </defs>
+          <path
+            id="processPathBg"
+            class="process-path-bg"
+            d="M0,150 C150,250 300,50 450,150 C600,250 700,100 800,150"
+          />
+          <path
+            id="processPathActive"
+            class="process-path-active"
+            d="M0,150 C150,250 300,50 450,150 C600,250 700,100 800,150"
+          />
 
-        <div class="section-title">
+          <!-- Checkpoints 1-5 -->
+          <g class="process-node" data-step="0" transform="translate(0,150)">
+            <circle class="node-circle" cx="0" cy="0" r="8" />
+            <text class="node-text" x="0" y="-20">01</text>
+          </g>
+          <g class="process-node" data-step="1" transform="translate(200,110)">
+            <circle class="node-circle" cx="0" cy="0" r="8" />
+            <text class="node-text" x="0" y="-20">02</text>
+          </g>
+          <g class="process-node" data-step="2" transform="translate(400,150)">
+            <circle class="node-circle" cx="0" cy="0" r="8" />
+            <text class="node-text" x="0" y="-20">03</text>
+          </g>
+          <g class="process-node" data-step="3" transform="translate(600,120)">
+            <circle class="node-circle" cx="0" cy="0" r="8" />
+            <text class="node-text" x="0" y="-20">04</text>
+          </g>
+          <g class="process-node" data-step="4" transform="translate(800,150)">
+            <circle class="node-circle" cx="0" cy="0" r="8" />
+            <text class="node-text" x="0" y="-20">05</text>
+          </g>
+        </svg>
 
-            <h2>Featured Projects</h2>
+        <div class="process-content">
+          <div class="process-step-card active" id="stepContent0">
+            <h3>Discover</h3>
+            <p>Understand the problem.</p>
+          </div>
+          <div class="process-step-card" id="stepContent1">
+            <h3>Define</h3>
+            <p>Plan the solution.</p>
+          </div>
+          <div class="process-step-card" id="stepContent2">
+            <h3>Design</h3>
+            <p>Turn ideas into interfaces.</p>
+          </div>
+          <div class="process-step-card" id="stepContent3">
+            <h3>Develop</h3>
+            <p>Build the experience.</p>
+          </div>
+          <div class="process-step-card" id="stepContent4">
+            <h3>Iterate</h3>
+            <p>Test. Improve. Repeat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section reveal">
+      <div class="section-header">
+        <p class="section-tag">04 - Skills</p>
+        <h2>Tools I Work With</h2>
+      </div>
+
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h3>Development</h3>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <i class="fab fa-html5"></i><span>HTML5</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-css3-alt"></i><span>CSS3</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-js"></i><span>JavaScript</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-php"></i><span>PHP</span>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-database"></i><span>MySQL</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-laravel"></i><span>Laravel</span>
+            </div>
+          </div>
         </div>
 
-        <div class="project-grid">
-
-            <div class="project-card">
-
-                <img src="img/siakad.png">
-
-                <div class="project-content">
-
-                    <h3>Dashboard SIAKAD Mahasiswa</h3>
-
-                    <p>
-
-                        Responsive School Dashboard menggunakan
-                        HTML CSS JavaScript.
-
-                    </p>
-
-                    <a href="http://localhost/mahasiswa/index.php">View Project →</a>
-
-                </div>
-
+        <div class="skill-group">
+          <h3>Design & Exploration</h3>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <i class="fab fa-figma"></i><span>Figma</span>
             </div>
-
-            <div class="project-card">
-
-                <img src="img/toko-butik.png">
-
-                <div class="project-content">
-
-                    <h3>Todo App</h3>
-
-                    <p>
-
-                        Website manajemen tugas berbasis PHP & MySQL.
-
-                    </p>
-
-                    <a href="http://localhost/toko_baju/dashboard.php">View Project →</a>
-
-                </div>
-
+            <div class="skill-card">
+              <i class="fab fa-python"></i><span>Python</span>
             </div>
-
-            <div class="project-card">
-
-                <img src="img/figma.png">
-
-                <div class="project-content">
-
-                    <h3>UI Design Mobile</h3>
-
-                    <p>
-
-                        Modern UI Design menggunakan Figma.
-
-                    </p>
-
-                    <a href="#">View Project →</a>
-
-                </div>
-
-            </div>
-
+          </div>
         </div>
+      </div>
+    </section>
 
+    <!-- PROJECTS SECTION (Tanpa Nomor) -->
+    <section id="work" class="section reveal">
+      <div class="section-header">
+        <p class="section-tag">05 - Work</p>
+        <h2>Things I've Built & Explored.</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-img">
+            <img src="img/siakad.png" alt="Dashboard SIAKAD" />
+          </div>
+          <div class="project-info">
+            <h3>Dashboard SIAKAD Mahasiswa</h3>
+            <p>Responsive School Dashboard dengan HTML, CSS, JavaScript.</p>
+            <a href="http://localhost/mahasiswa/" class="p-link"
+              >View Project <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img">
+            <img src="img/toko-butik.png" alt="Todo App" />
+          </div>
+          <div class="project-info">
+            <h3>Todo App</h3>
+            <p>Website manajemen tugas berbasis PHP & MySQL.</p>
+            <a href="http://localhost/toko_baju/dashboard.php" class="p-link"
+              >View Project <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img">
+            <img src="img/figma.png" alt="UI Design Mobile" />
+          </div>
+          <div class="project-info">
+            <h3>UI Design Mobile</h3>
+            <p>Modern UI Design menggunakan Figma.</p>
+            <a href="#" class="p-link"
+              >View Project <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CURRENTLY LEARNING -->
+    <section id="learning" class="section reveal">
+      <div class="section-header">
+        <p class="section-tag">06 - Next</p>
+        <h2>What's Next?</h2>
+      </div>
+
+      <div class="learning-roadmap">
+        <div class="learning-card">
+          <span>01</span>
+          <h3>UI/UX</h3>
+          <p>Deep dive into Design Systems.</p>
+        </div>
+        <div class="learning-card">
+          <span>02</span>
+          <h3>Product Thinking</h3>
+          <p>Building products with strategy.</p>
+        </div>
+        <div class="learning-card">
+          <span>03</span>
+          <h3>UX Research</h3>
+          <p>Understanding user needs deeply.</p>
+        </div>
+        <div class="learning-card">
+          <span>04</span>
+          <h3>Creative Development</h3>
+          <p>Interactive web experiences.</p>
+        </div>
+      </div>
     </section>
 
     <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section reveal">
+      <div class="contact-cta">
+        <p class="section-tag">07 - Contact</p>
+        <h2>Have an idea? Let's build something meaningful.</h2>
+        <a href="#commentSection" class="btn btn-primary btn-large">
+            Start a conversation <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
 
-    <section id="contact">
+      <!-- Social Links dengan Logo Besar -->
+      <div class="contact-socials">
+        <a
+          href="https://wa.me/6285888204966"
+          target="_blank"
+          class="social-item"
+          aria-label="WhatsApp"
+        >
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a
+          href="https://github.com/fakhrizhofransyah-gif"
+          target="_blank"
+          class="social-item"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/fakhri-zhofran-syah-a22b0433b/"
+          target="_blank"
+          class="social-item"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          href="mailto:fakhrizhofran.syah@gmail.com"
+          class="social-item"
+          aria-label="Email"
+        >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
 
-        <div class="section-title">
+      <!-- Bagian Komentar User -->
+      <div id="commentSection" class="comment-section">
+        <h3>Leave a Comment</h3>
+        
+        <!-- FORM UTAMA (HANYA UNTUK KOMENTAR BARU) -->
+        <form id="commentForm" class="comment-form">
+          <div class="form-group">
+            <input type="text" id="commentName" placeholder="Your Name" required />
+            <input type="email" id="commentEmail" placeholder="Your Email" required />
+          </div>
+          <textarea id="commentMessage" placeholder="Write your message or comment here..." rows="4" required></textarea>
+          <button type="submit" class="btn btn-primary">Post Comment</button>
+        </form>
 
-            <h2>Let's Work Together</h2>
-
+        <div id="commentsList" class="comments-list">
+          <!-- Komentar akan muncul di sini -->
+          <p class="no-comments">Belum ada komentar. Jadilah yang pertama!</p>
         </div>
-
-        <div class="contact-box">
-
-            <div>
-    <h4>Email</h4>
-    <p>
-        <a href="mailto:fakhrizhofran.syah@gmail.com">
-            fakhrizhofran.syah@gmail.com
-        </a>
-    </p>
-</div>
-
-<div>
-    <h4>WhatsApp</h4>
-    <p>
-        <a href="https://wa.me/6285888204966" target="_blank">
-            +62 858-8820-4966
-        </a>
-    </p>
-</div>
-
-<div>
-    <h4>GitHub</h4>
-    <p>
-        <a href="https://github.com/fakhrizhofransyah-gif" target="_blank">
-            github.com/fakhrizhofransyah-gif
-        </a>
-    </p>
-</div>
-
-        </div>
-
+      </div>
     </section>
 
+    <!-- FOOTER (Dengan Logo Sosmed) -->
     <footer>
-
-        © 2026 Fakhri Zhofran Syah
-
+      <div class="footer-socials">
+        <a
+          href="https://wa.me/6285888204966"
+          target="_blank"
+          aria-label="WhatsApp"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+        <a
+          href="https://github.com/fakhrizhofransyah-gif"
+          target="_blank"
+          aria-label="GitHub"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/fakhri-zhofran-syah-a22b0433b/"
+          target="_blank"
+          aria-label="LinkedIn"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="mailto:fakhrizhofran.syah@gmail.com" aria-label="Email"
+          ><i class="fas fa-envelope"></i
+        ></a>
+      </div>
+      <p>© 2026 Fakhri Zhofran Syah. All rights reserved.</p>
     </footer>
 
+    <!-- ================= MASCOT (MATA MENGIKUTI MOUSE) ================= -->
+    <div class="mascot-wrapper" id="mascotWrapper">
+        <div class="mascot-shadow"></div>
+        <svg class="mascot-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <!-- Badan Bulat -->
+            <circle cx="50" cy="50" r="45" fill="#e9ecef" />
+            <circle cx="50" cy="50" r="45" fill="none" stroke="#ffffff" stroke-width="4" />
+            
+            <!-- Mata Kiri -->
+            <g id="eyeLeft" class="mascot-eye">
+                <circle cx="35" cy="45" r="10" fill="#fff" />
+                <!-- PUPIL MULAI DI TENGAH MATA -->
+                <circle id="pupilLeft" class="mascot-pupil" cx="35" cy="45" r="5" fill="#1e3a8a" />
+            </g>
+            
+            <!-- Mata Kanan -->
+            <g id="eyeRight" class="mascot-eye">
+                <circle cx="65" cy="45" r="10" fill="#fff" />
+                <!-- PUPIL MULAI DI TENGAH MATA -->
+                <circle id="pupilRight" class="mascot-pupil" cx="65" cy="45" r="5" fill="#1e3a8a" />
+            </g>
+            
+            <!-- Mulut -->
+            <path d="M 40 65 Q 50 75 60 65" fill="none" stroke="#1e3a8a" stroke-width="3" stroke-linecap="round" />
+        </svg>
+    </div>
+
+    <!-- JS (Script HARUS setelah Mascot agar elemennya ditemukan) -->
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
