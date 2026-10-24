@@ -5,27 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fakhri Zhofran Syah | Digital Experience Designer</title>
 
-    <!-- Google Font -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet" />
+    
     <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-
-    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="certificate.css" />
   </head>
   <body>
     <!-- LOADING SCREEN -->
     <div class="loader" id="loader">
       <div class="loader-text" id="loaderText">F</div>
+    </div>
+
+    <!-- BACKGROUND AERO -->
+    <div class="aero-background">
+        <!-- SCENE 1: SKY, CLOUDS, & CITY -->
+        <div class="sky-scene" id="skyScene">
+            <div class="sky-layer">
+                <div class="cloud cloud-1"></div>
+                <div class="cloud cloud-2"></div>
+                <div class="cloud cloud-3"></div>
+            </div>
+            
+            <div class="city-layer">
+                <svg viewBox="0 0 1440 400" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="glass-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#a0e0ff" stop-opacity="0.9"/>
+                            <stop offset="50%" stop-color="#4facfe" stop-opacity="0.8"/>
+                            <stop offset="100%" stop-color="#0072ff" stop-opacity="0.9"/>
+                        </linearGradient>
+                        <linearGradient id="glass-white" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+                            <stop offset="100%" stop-color="#d4e4f7" stop-opacity="0.8"/>
+                        </linearGradient>
+                    </defs>
+                    <g opacity="0.6">
+                        <rect x="150" y="200" width="40" height="200" fill="url(#glass-blue)" rx="10" />
+                        <rect x="250" y="150" width="30" height="250" fill="url(#glass-white)" rx="15" />
+                        <rect x="1100" y="180" width="50" height="220" fill="url(#glass-blue)" rx="5" />
+                        <rect x="1250" y="220" width="35" height="180" fill="url(#glass-white)" rx="10" />
+                    </g>
+                    <g opacity="0.9">
+                        <rect x="350" y="120" width="60" height="280" fill="url(#glass-blue)" rx="20" />
+                        <rect x="430" y="180" width="50" height="220" fill="url(#glass-white)" rx="10" />
+                        <path d="M 600 400 L 600 100 Q 600 50 650 50 Q 700 50 700 100 L 700 400 Z" fill="url(#glass-blue)" />
+                        <rect x="800" y="140" width="70" height="260" fill="url(#glass-blue)" rx="15" />
+                        <rect x="900" y="200" width="45" height="200" fill="url(#glass-white)" rx="10" />
+                        <polygon points="980,400 1020,100 1050,100 1030,400" fill="url(#glass-blue)" />
+                    </g>
+                    <g fill="#4caf50" opacity="0.8">
+                        <circle cx="320" cy="390" r="20" />
+                        <circle cx="500" cy="395" r="15" />
+                        <circle cx="780" cy="390" r="25" />
+                        <circle cx="880" cy="395" r="18" />
+                        <circle cx="960" cy="390" r="22" />
+                    </g>
+                </svg>
+            </div>
+
+            <div class="hill-layer">
+                <div class="hill hill-back"></div>
+                <div class="hill hill-front"></div>
+                <div class="flower flower-1">🌼</div>
+                <div class="flower flower-2">🌼</div>
+                <div class="flower flower-3">🌼</div>
+            </div>
+        </div>
+
+        <!-- SCENE 2: WATER SURFACE -->
+        <div class="water-layer">
+            <div class="water-wave wave-1"></div>
+            <div class="water-wave wave-2"></div>
+            <div class="water-splash"></div>
+            <div class="water-splash-right"></div>
+        </div>
+
+        <!-- SCENE 3: UNDERWATER -->
+        <div class="underwater-layer" id="underwaterScene">
+            <div class="sunrays"></div>
+            <div class="seabed">
+                <svg viewBox="0 0 1440 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,100 C200,150 400,50 600,100 C800,150 1000,50 1200,100 C1300,125 1400,75 1440,100 L1440,200 L0,200 Z" fill="#b0e0e6" opacity="0.6"/>
+                    <path d="M0,150 C300,180 500,120 800,160 C1100,200 1300,140 1440,160 L1440,200 L0,200 Z" fill="#48d1cc" opacity="0.8"/>
+                </svg>
+                <div class="rock rock-1"></div>
+                <div class="rock rock-2"></div>
+                <div class="rock rock-3"></div>
+            </div>
+
+            <div class="bubble bubble-1"></div>
+            <div class="bubble bubble-2"></div>
+            <div class="bubble bubble-3"></div>
+
+            <div class="fish fish-aero-1">
+                <svg viewBox="0 0 100 50" class="fish-svg">
+                    <path d="M90,25 C90,15 70,10 50,10 C30,10 10,25 10,25 C10,25 30,40 50,40 C70,40 90,35 90,25 Z" fill="#ff7eb3" stroke="#1a1a2e" stroke-width="2"/>
+                    <path d="M10,25 L-10,10 L-5,25 L-10,40 Z" fill="#7fdbff" stroke="#1a1a2e" stroke-width="2"/>
+                    <circle cx="75" cy="20" r="3" fill="#1a1a2e"/>
+                </svg>
+            </div>
+            <div class="fish fish-aero-2">
+                <svg viewBox="0 0 100 50" class="fish-svg" style="transform: scaleX(-1);">
+                    <path d="M90,25 C90,15 70,10 50,10 C30,10 10,25 10,25 C10,25 30,40 50,40 C70,40 90,35 90,25 Z" fill="#fffacd" stroke="#1a1a2e" stroke-width="2"/>
+                    <path d="M10,25 L-10,10 L-5,25 L-10,40 Z" fill="#c8ff9e" stroke="#1a1a2e" stroke-width="2"/>
+                    <circle cx="75" cy="20" r="2" fill="#1a1a2e"/>
+                </svg>
+            </div>
+        </div>
     </div>
 
     <!-- NAVBAR -->
@@ -35,21 +128,14 @@
         <ul class="nav-links" id="navLinks">
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#process">Process</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#work">Work</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <a
-          href="https://wa.me/6285888204966?text=Halo%20Fakhri%2C%20saya%20ingin%20mendiskusikan%20sebuah%20proyek."
-          target="_blank"
-          class="nav-cta"
-        >
+        <a href="https://wa.me/6285888204966?text=Halo%20Fakhri%2C%20saya%20ingin%20mendiskusikan%20sebuah%20proyek." target="_blank" class="nav-cta">
           <i class="fab fa-whatsapp"></i> Let's Talk
         </a>
-        <div class="hamburger" id="hamburger">
-          <span></span><span></span><span></span>
-        </div>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
       </nav>
     </header>
 
@@ -57,59 +143,32 @@
     <section class="hero" id="home">
       <div class="hero-left">
         <p class="greeting">Hi, I'm Fakhri Zhofran Syah</p>
-        <h1 class="hero-title">
-          Building digital experiences that feel <em>simple.</em>
-        </h1>
-
-        <h2 class="hero-role">
-          <span id="typing"></span><span class="cursor">|</span>
-        </h2>
-
-        <p class="hero-desc">
-          Saya menggabungkan development, interface design, dan interaction
-          untuk membuat pengalaman digital yang sederhana, modern, dan mudah
-          digunakan.
-        </p>
-
+        <h1 class="hero-title">Building digital experiences that feel <em>simple.</em></h1>
+        <h2 class="hero-role"><span id="typing"></span><span class="cursor">|</span></h2>
+        <p class="hero-desc">Saya menggabungkan development, interface design, dan interaction untuk membuat pengalaman digital yang sederhana, modern, dan mudah digunakan.</p>
         <div class="hero-buttons">
-          <a href="#work" class="btn btn-primary"
-            >Explore My Work <i class="fas fa-arrow-right"></i
-          ></a>
-          <a href="img/cv fakhri2.pdf" class="btn btn-outline"
-            ><i class="fas fa-download"></i> Download CV</a
-          >
+          <a href="#work" class="btn btn-primary">Explore My Work <i class="fas fa-arrow-right"></i></a>
+          <a href="cv fakhri2.pdf" target="_blank" class="btn btn-outline"><i class="fas fa-download"></i> Download CV</a>
         </div>
-
-        <!-- Social Media di Home (di bawah tombol) -->
         <div class="hero-socials">
-          <a
-            href="https://wa.me/6285888204966"
-            target="_blank"
-            aria-label="WhatsApp"
-            ><i class="fab fa-whatsapp"></i
-          ></a>
-          <a
-            href="https://github.com/fakhrizhofransyah-gif"
-            target="_blank"
-            aria-label="GitHub"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/fakhri-zhofran-syah-a22b0433b/"
-            target="_blank"
-            aria-label="LinkedIn"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="mailto:fakhrizhofran.syah@gmail.com" aria-label="Email"
-            ><i class="fas fa-envelope"></i
-          ></a>
+          <a href="https://wa.me/6285888204966" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://github.com/fakhrizhofransyah-gif" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/fakhri-zhofran-syah-a22b0433b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:fakhrizhofran.syah@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
-
       <div class="hero-right">
+        <div class="profile-card-silhouette">
+          <div class="silhouette-img-wrapper">
+            <!-- Pastikan gambar ada di folder img/ -->
+            <img src="img/siluet.jpg" alt="Fakhri Silhouette" />
+          </div>
+          <div class="silhouette-label">[ SYSTEM_GHOST ]</div>
+        </div>
         <div class="profile-card-neu">
           <div class="profile-img-wrapper">
-            <img src="img/mukapari.jpeg" alt="Fakhri Zhofran Syah" />
+            <!-- Pastikan gambar ada di folder img/ -->
+            <img src="img/mukapari.png" alt="Fakhri Zhofran Syah" />
           </div>
           <div class="profile-info">
             <h4>Fakhri Zhofran</h4>
@@ -127,33 +186,15 @@
         <p class="section-tag">01 - About</p>
         <h2>Designing with purpose, building with curiosity.</h2>
       </div>
-
       <div class="about-grid">
         <div class="about-text">
-          <p>
-            Halo! Saya Fakhri, seorang developer dan desainer yang percaya bahwa
-            produk digital hebat lahir dari perpaduan logika kode dan empati
-            pengguna. Saya terus mengembangkan kemampuan dalam HTML, CSS,
-            JavaScript, PHP, MySQL, Laravel, dan Figma.
-          </p>
+          <p>Halo! Saya Fakhri, seorang developer dan desainer yang percaya bahwa produk digital hebat lahir dari perpaduan logika kode dan empati pengguna. Saya terus mengembangkan kemampuan dalam HTML, CSS, JavaScript, PHP, MySQL, Laravel, dan Figma.</p>
         </div>
         <div class="about-stats">
-          <div class="stat-card">
-            <h3>2+</h3>
-            <p>Years Learning</p>
-          </div>
-          <div class="stat-card">
-            <h3>3+</h3>
-            <p>Projects</p>
-          </div>
-          <div class="stat-card">
-            <h3>8+</h3>
-            <p>Technologies</p>
-          </div>
-          <div class="stat-card">
-            <h3>&infin;</h3>
-            <p>Curiosity</p>
-          </div>
+          <div class="stat-card"><h3>2+</h3><p>Years Learning</p></div>
+          <div class="stat-card"><h3>3+</h3><p>Projects</p></div>
+          <div class="stat-card"><h3>8+</h3><p>Technologies</p></div>
+          <div class="stat-card"><h3>&infin;</h3><p>Curiosity</p></div>
         </div>
       </div>
     </section>
@@ -164,116 +205,71 @@
         <p class="section-tag">02 - Journey</p>
         <h2>My Journey</h2>
       </div>
-
       <div class="timeline">
-        <div class="timeline-item active">
-          <div class="t-dot"></div>
-          <div class="t-content">
-            <h4>2024</h4>
-            <p>Started Learning</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="t-dot"></div>
-          <div class="t-content">
-            <h4>2025</h4>
-            <p>Built Real Projects</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="t-dot"></div>
-          <div class="t-content">
-            <h4>2026</h4>
-            <p>Exploring UI/UX + Product</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="t-dot"></div>
-          <div class="t-content">
-            <h4>NEXT</h4>
-            <p>Building Better Experiences</p>
-          </div>
-        </div>
+        <div class="timeline-item active"><div class="t-dot"></div><div class="t-content"><h4>2024</h4><p>Started Learning</p></div></div>
+        <div class="timeline-item"><div class="t-dot"></div><div class="t-content"><h4>2025</h4><p>Built Real Projects</p></div></div>
+        <div class="timeline-item"><div class="t-dot"></div><div class="t-content"><h4>2026</h4><p>Exploring UI/UX + Product</p></div></div>
+        <div class="timeline-item"><div class="t-dot"></div><div class="t-content"><h4>NEXT</h4><p>Building Better Experiences</p></div></div>
       </div>
     </section>
 
-    <!-- PROCESS SECTION (SIGNATURE) -->
-    <section id="process" class="section reveal">
+    <!-- CERTIFICATE SECTION -->
+    <section id="certificates" class="section reveal">
       <div class="section-header">
-        <p class="section-tag">03 - Process</p>
-        <h2>From Idea to Experience.</h2>
+        <p class="section-tag">03 - Certificates</p>
+        <h2>Achievement Map</h2>
       </div>
 
-      <div class="process-modern-container">
-        <svg
-          class="process-svg"
-          viewBox="0 0 800 300"
-          preserveAspectRatio="none"
-        >
-          <defs>
-            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" style="stop-color: #1e3a8a; stop-opacity: 1" />
-              <stop offset="50%" style="stop-color: #3b82f6; stop-opacity: 1" />
-              <stop
-                offset="100%"
-                style="stop-color: #60a5fa; stop-opacity: 1"
-              />
-            </linearGradient>
-          </defs>
-          <path
-            id="processPathBg"
-            class="process-path-bg"
-            d="M0,150 C150,250 300,50 450,150 C600,250 700,100 800,150"
-          />
-          <path
-            id="processPathActive"
-            class="process-path-active"
-            d="M0,150 C150,250 300,50 450,150 C600,250 700,100 800,150"
-          />
+      <div class="achievement-map-container">
+        <div class="achievement-map-filters">
+          <button class="am-filter-btn active" data-filter="all">All</button>
+          <button class="am-filter-btn" data-filter="tech">Tech</button>
+          <button class="am-filter-btn" data-filter="design">Design</button>
+          <button class="am-filter-btn" data-filter="organisasi">Organisasi</button>
+        </div>
 
-          <!-- Checkpoints 1-5 -->
-          <g class="process-node" data-step="0" transform="translate(0,150)">
-            <circle class="node-circle" cx="0" cy="0" r="8" />
-            <text class="node-text" x="0" y="-20">01</text>
-          </g>
-          <g class="process-node" data-step="1" transform="translate(200,110)">
-            <circle class="node-circle" cx="0" cy="0" r="8" />
-            <text class="node-text" x="0" y="-20">02</text>
-          </g>
-          <g class="process-node" data-step="2" transform="translate(400,150)">
-            <circle class="node-circle" cx="0" cy="0" r="8" />
-            <text class="node-text" x="0" y="-20">03</text>
-          </g>
-          <g class="process-node" data-step="3" transform="translate(600,120)">
-            <circle class="node-circle" cx="0" cy="0" r="8" />
-            <text class="node-text" x="0" y="-20">04</text>
-          </g>
-          <g class="process-node" data-step="4" transform="translate(800,150)">
-            <circle class="node-circle" cx="0" cy="0" r="8" />
-            <text class="node-text" x="0" y="-20">05</text>
-          </g>
-        </svg>
+        <div class="achievement-gamebot-wrapper">
+          <div class="gamebot-body">
+            <button class="gamebot-btn-blow" id="blowBubblesBtn" title="Press to blow faster!" aria-label="Blow Bubbles">
+              <i class="fas fa-wind"></i>
+            </button>
+            
+        <div class="gamebot-screen" id="aquariumScreen">
+          <!-- Background gambar -->
+          <div class="am-aquarium-bg"></div>
+          
+          <!-- Overlay gradient & efek air -->
+          <div class="am-overlay"></div>
+          
+          <!-- Sumber Udara -->
+          <div class="am-nozzle am-nozzle-left"></div>
+          <div class="am-nozzle am-nozzle-right"></div>
+        </div>
+            <div class="gamebot-actions">
+               <div class="am-btn">A</div>
+               <div class="am-btn">B</div>
+            </div>
+          </div>
+          <div class="gamebot-brand">GAME MACHINE</div>
+        </div>
 
-        <div class="process-content">
-          <div class="process-step-card active" id="stepContent0">
-            <h3>Discover</h3>
-            <p>Understand the problem.</p>
+        <div class="am-detail-panel" id="certificateDetailPanel">
+          <div class="am-detail-header">
+            <span id="amDetailTitle">Certificate Info</span>
+            <button class="am-close-btn" id="closeDetailBtn" aria-label="Close">×</button>
           </div>
-          <div class="process-step-card" id="stepContent1">
-            <h3>Define</h3>
-            <p>Plan the solution.</p>
-          </div>
-          <div class="process-step-card" id="stepContent2">
-            <h3>Design</h3>
-            <p>Turn ideas into interfaces.</p>
-          </div>
-          <div class="process-step-card" id="stepContent3">
-            <h3>Develop</h3>
-            <p>Build the experience.</p>
-          </div>
-          <div class="process-step-card" id="stepContent4">
-            <h3>Iterate</h3>
-            <p>Test. Improve. Repeat.</p>
+          <div class="am-detail-body">
+            <div class="am-detail-img">
+              <img id="amDetailImgSrc" src="" alt="Certificate">
+            </div>
+            <div class="am-detail-info">
+              <h4 id="amDetailName">Web Design Fundamentals</h4>
+              <p class="am-publisher"><i class="fas fa-building"></i> <span id="amDetailIssuer">Dicoding Indonesia</span></p>
+              <p class="am-date"><i class="fas fa-calendar-alt"></i> <span id="amDetailDate">Mei 2025</span></p>
+              <p class="am-desc" id="amDetailDesc">Mempelajari dasar-dasar desain web modern.</p>
+              <div class="am-tags" id="amDetailTags"></div>
+              <a href="#" class="am-view-cert-btn" id="amDetailLink" target="_blank">Lihat Sertifikat <i class="fas fa-arrow-right"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -285,90 +281,57 @@
         <p class="section-tag">04 - Skills</p>
         <h2>Tools I Work With</h2>
       </div>
-
       <div class="skill-groups">
         <div class="skill-group">
           <h3>Development</h3>
           <div class="skill-cards">
-            <div class="skill-card">
-              <i class="fab fa-html5"></i><span>HTML5</span>
-            </div>
-            <div class="skill-card">
-              <i class="fab fa-css3-alt"></i><span>CSS3</span>
-            </div>
-            <div class="skill-card">
-              <i class="fab fa-js"></i><span>JavaScript</span>
-            </div>
-            <div class="skill-card">
-              <i class="fab fa-php"></i><span>PHP</span>
-            </div>
-            <div class="skill-card">
-              <i class="fas fa-database"></i><span>MySQL</span>
-            </div>
-            <div class="skill-card">
-              <i class="fab fa-laravel"></i><span>Laravel</span>
-            </div>
+            <div class="skill-card"><i class="fab fa-html5"></i><span>HTML5</span></div>
+            <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+            <div class="skill-card"><i class="fab fa-js"></i><span>JavaScript</span></div>
+            <div class="skill-card"><i class="fab fa-php"></i><span>PHP</span></div>
+            <div class="skill-card"><i class="fas fa-database"></i><span>MySQL</span></div>
+            <div class="skill-card"><i class="fab fa-laravel"></i><span>Laravel</span></div>
           </div>
         </div>
-
         <div class="skill-group">
           <h3>Design & Exploration</h3>
           <div class="skill-cards">
-            <div class="skill-card">
-              <i class="fab fa-figma"></i><span>Figma</span>
-            </div>
-            <div class="skill-card">
-              <i class="fab fa-python"></i><span>Python</span>
-            </div>
+            <div class="skill-card"><i class="fab fa-figma"></i><span>Figma</span></div>
+            <div class="skill-card"><i class="fab fa-python"></i><span>Python</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS SECTION (Tanpa Nomor) -->
+    <!-- PROJECTS SECTION -->
     <section id="work" class="section reveal">
       <div class="section-header">
         <p class="section-tag">05 - Work</p>
         <h2>Things I've Built & Explored.</h2>
       </div>
-
       <div class="projects-grid">
         <article class="project-card">
-          <div class="project-img">
-            <img src="img/siakad.png" alt="Dashboard SIAKAD" />
-          </div>
+          <div class="project-img"><img src="img/siakad.png" alt="Dashboard SIAKAD" /></div>
           <div class="project-info">
             <h3>Dashboard SIAKAD Mahasiswa</h3>
             <p>Responsive School Dashboard dengan HTML, CSS, JavaScript.</p>
-            <a href="http://localhost/mahasiswa/" class="p-link"
-              >View Project <i class="fas fa-arrow-right"></i
-            ></a>
+            <a href="http://localhost/mahasiswa/" class="p-link">View Project <i class="fas fa-arrow-right"></i></a>
           </div>
         </article>
-
         <article class="project-card">
-          <div class="project-img">
-            <img src="img/toko-butik.png" alt="Todo App" />
-          </div>
+          <div class="project-img"><img src="img/toko-butik.png" alt="Todo App" /></div>
           <div class="project-info">
-            <h3>Todo App</h3>
-            <p>Website manajemen tugas berbasis PHP & MySQL.</p>
-            <a href="http://localhost/toko_baju/dashboard.php" class="p-link"
-              >View Project <i class="fas fa-arrow-right"></i
-            ></a>
+            <h3>Dashboard Butik</h3>
+            <p>Website manajemen stok barang butik berbasis PHP & MySQL.</p>
+            <a href="http://localhost/toko_baju/dashboard.php" class="p-link">View Project <i class="fas fa-arrow-right"></i></a>
           </div>
         </article>
-
         <article class="project-card">
-          <div class="project-img">
-            <img src="img/figma.png" alt="UI Design Mobile" />
-          </div>
+          <div class="project-img"><img src="img/figma.png" alt="UI Design Mobile" /></div>
           <div class="project-info">
-            <h3>UI Design Mobile</h3>
+            <h3>UI Design Landing Page</h3>
             <p>Modern UI Design menggunakan Figma.</p>
-            <a href="#" class="p-link"
-              >View Project <i class="fas fa-arrow-right"></i
-            ></a>
+            <a href="#" class="p-link">View Project <i class="fas fa-arrow-right"></i></a>
           </div>
         </article>
       </div>
@@ -380,81 +343,29 @@
         <p class="section-tag">06 - Next</p>
         <h2>What's Next?</h2>
       </div>
-
       <div class="learning-roadmap">
-        <div class="learning-card">
-          <span>01</span>
-          <h3>UI/UX</h3>
-          <p>Deep dive into Design Systems.</p>
-        </div>
-        <div class="learning-card">
-          <span>02</span>
-          <h3>Product Thinking</h3>
-          <p>Building products with strategy.</p>
-        </div>
-        <div class="learning-card">
-          <span>03</span>
-          <h3>UX Research</h3>
-          <p>Understanding user needs deeply.</p>
-        </div>
-        <div class="learning-card">
-          <span>04</span>
-          <h3>Creative Development</h3>
-          <p>Interactive web experiences.</p>
-        </div>
+        <div class="learning-card"><span>01</span><h3>UI/UX</h3><p>Deep dive into Design Systems.</p></div>
+        <div class="learning-card"><span>02</span><h3>Product Thinking</h3><p>Building products with strategy.</p></div>
+        <div class="learning-card"><span>03</span><h3>UX Research</h3><p>Understanding user needs deeply.</p></div>
+        <div class="learning-card"><span>04</span><h3>Creative Development</h3><p>Interactive web experiences.</p></div>
       </div>
     </section>
 
-    <!-- ================= CONTACT ================= -->
+    <!-- CONTACT -->
     <section id="contact" class="section reveal">
       <div class="contact-cta">
         <p class="section-tag">07 - Contact</p>
         <h2>Have an idea? Let's build something meaningful.</h2>
-        <a href="#commentSection" class="btn btn-primary btn-large">
-            Start a conversation <i class="fas fa-arrow-right"></i>
-        </a>
+        <a href="#commentSection" class="btn btn-primary btn-large">Start a conversation <i class="fas fa-arrow-right"></i></a>
       </div>
-
-      <!-- Social Links dengan Logo Besar -->
       <div class="contact-socials">
-        <a
-          href="https://wa.me/6285888204966"
-          target="_blank"
-          class="social-item"
-          aria-label="WhatsApp"
-        >
-          <i class="fab fa-whatsapp"></i>
-        </a>
-        <a
-          href="https://github.com/fakhrizhofransyah-gif"
-          target="_blank"
-          class="social-item"
-          aria-label="GitHub"
-        >
-          <i class="fab fa-github"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/fakhri-zhofran-syah-a22b0433b/"
-          target="_blank"
-          class="social-item"
-          aria-label="LinkedIn"
-        >
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a
-          href="mailto:fakhrizhofran.syah@gmail.com"
-          class="social-item"
-          aria-label="Email"
-        >
-          <i class="fas fa-envelope"></i>
-        </a>
+        <a href="https://wa.me/6285888204966" target="_blank" class="social-item" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://github.com/fakhrizhofransyah-gif" target="_blank" class="social-item" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/fakhri-zhofran-syah-a22b0433b/" target="_blank" class="social-item" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:fakhrizhofran.syah@gmail.com" class="social-item" aria-label="Email"><i class="fas fa-envelope"></i></a>
       </div>
-
-      <!-- Bagian Komentar User -->
       <div id="commentSection" class="comment-section">
         <h3>Leave a Comment</h3>
-        
-        <!-- FORM UTAMA (HANYA UNTUK KOMENTAR BARU) -->
         <form id="commentForm" class="comment-form">
           <div class="form-group">
             <input type="text" id="commentName" placeholder="Your Name" required />
@@ -463,70 +374,45 @@
           <textarea id="commentMessage" placeholder="Write your message or comment here..." rows="4" required></textarea>
           <button type="submit" class="btn btn-primary">Post Comment</button>
         </form>
-
         <div id="commentsList" class="comments-list">
-          <!-- Komentar akan muncul di sini -->
           <p class="no-comments">Belum ada komentar. Jadilah yang pertama!</p>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER (Dengan Logo Sosmed) -->
+    <!-- FOOTER -->
     <footer>
       <div class="footer-socials">
-        <a
-          href="https://wa.me/6285888204966"
-          target="_blank"
-          aria-label="WhatsApp"
-          ><i class="fab fa-whatsapp"></i
-        ></a>
-        <a
-          href="https://github.com/fakhrizhofransyah-gif"
-          target="_blank"
-          aria-label="GitHub"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/fakhri-zhofran-syah-a22b0433b/"
-          target="_blank"
-          aria-label="LinkedIn"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a href="mailto:fakhrizhofran.syah@gmail.com" aria-label="Email"
-          ><i class="fas fa-envelope"></i
-        ></a>
+        <a href="https://wa.me/6285888204966" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://github.com/fakhrizhofransyah-gif" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/fakhri-zhofran-syah-a22b0433b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:fakhrizhofran.syah@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
       </div>
       <p>© 2026 Fakhri Zhofran Syah. All rights reserved.</p>
     </footer>
 
-    <!-- ================= MASCOT (MATA MENGIKUTI MOUSE) ================= -->
-    <div class="mascot-wrapper" id="mascotWrapper">
-        <div class="mascot-shadow"></div>
-        <svg class="mascot-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <!-- Badan Bulat -->
-            <circle cx="50" cy="50" r="45" fill="#e9ecef" />
-            <circle cx="50" cy="50" r="45" fill="none" stroke="#ffffff" stroke-width="4" />
+        <!-- MASCOT (BUBBLE BUDDY / BLUE SLIME) -->
+    <div class="slime-wrapper" id="slimeMascot" aria-label="Interactive Mascot">
+        <div class="slime-shadow"></div>
+        <div class="slime-body">
+            <div class="slime-eyes">
+                <div class="slime-eye"><div class="slime-pupil"></div></div>
+                <div class="slime-eye"><div class="slime-pupil"></div></div>
+            </div>
+            <div class="slime-cheeks">
+                <div class="cheek"></div>
+                <div class="cheek"></div>
+            </div>
+            <div class="slime-mouth"></div>
             
-            <!-- Mata Kiri -->
-            <g id="eyeLeft" class="mascot-eye">
-                <circle cx="35" cy="45" r="10" fill="#fff" />
-                <!-- PUPIL MULAI DI TENGAH MATA -->
-                <circle id="pupilLeft" class="mascot-pupil" cx="35" cy="45" r="5" fill="#1e3a8a" />
-            </g>
-            
-            <!-- Mata Kanan -->
-            <g id="eyeRight" class="mascot-eye">
-                <circle cx="65" cy="45" r="10" fill="#fff" />
-                <!-- PUPIL MULAI DI TENGAH MATA -->
-                <circle id="pupilRight" class="mascot-pupil" cx="65" cy="45" r="5" fill="#1e3a8a" />
-            </g>
-            
-            <!-- Mulut -->
-            <path d="M 40 65 Q 50 75 60 65" fill="none" stroke="#1e3a8a" stroke-width="3" stroke-linecap="round" />
-        </svg>
+            <!-- Efek Animasi Tambahan -->
+            <div class="slime-zzz">z<span>Z</span><span>Z</span></div>
+            <div class="slime-heart">❤</div>
+        </div>
     </div>
 
-    <!-- JS (Script HARUS setelah Mascot agar elemennya ditemukan) -->
+    <!-- SCRIPTS -->
     <script src="script.js"></script>
+    <script src="certificate.js"></script>
   </body>
 </html>
